@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fiu_CaSPR.Sajib.TrustPal.SaveFriends"
+    android:background="#45454d">
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:text="Download"
+        android:background="#3f83f8"
+        android:ellipsize="end"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:onClick="myClickMethod"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Now Saving Friend"
+        android:id="@+id/saveText"
+        android:textColor="#fff"
+        android:layout_marginBottom="82dp"
+        android:layout_above="@+id/finish"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:background="#4932bb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You have sucessfully evaluated 20 of your friends."
+        android:id="@+id/textView10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="80dp"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Let&apos;s see your results!"
+        android:id="@+id/textView11"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="50dp"
+        android:textColor="#ffffff"
+        android:textSize="23sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/uploadButton"
+        android:layout_marginTop="250dp" />
+
+</LinearLayout>

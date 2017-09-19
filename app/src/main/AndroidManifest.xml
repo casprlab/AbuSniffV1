@@ -1,0 +1,441 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hathy.trustpal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher" android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.fiu_CaSPR.Sajib.TrustPal.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.Consent"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.AfterLogin"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.LoginActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FetchData"
+            android:label="@string/title_activity_fetch_data"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.friendsPage"
+            android:label="@string/title_activity_fetch_data"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.SaveMutualData"
+            android:label="@string/title_activity_friend_picker_starter"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FetchData" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1"
+            android:label="@string/title_activity_friend_selector_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.SaveMutualData" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.SaveFriends"
+            android:label="@string/title_activity_finish_job"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FinishJob"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView2"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView3"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView4"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView5"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView6"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView7"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView8"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView9"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView10"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView11"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView12"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView13"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView14"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView15"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView16"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView17"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView18"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView19"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView20"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView21"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView22"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView23"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView24"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView25"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView26"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView27"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView28"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView29"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView30"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:launchMode="singleTop"
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendPickerStarter"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.infoPage1"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.ResultSummary"
+            android:label="@string/title_activity_fetch_data"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.FriendResult"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.UploadToServer"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.AttentionCheck"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+        android:name="com.fiu_CaSPR.Sajib.TrustPal.UnqualifiedUser"
+        android:label="@string/title_activity_fake_logout"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.Warning1"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.Warning2"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.Warning3"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.EndResponse4"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.EndResponse5"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.EndResponse6"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.Tutorial"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.ResponseSummary"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+        <activity
+            android:name="com.fiu_CaSPR.Sajib.TrustPal.ConsentForm"
+            android:label="@string/title_activity_fake_logout"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fiu_CaSPR.Sajib.TrustPal.FriendSelectorView1" />
+        </activity>
+
+    </application>
+
+</manifest>

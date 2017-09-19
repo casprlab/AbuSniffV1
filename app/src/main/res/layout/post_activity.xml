@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#dfe3ee">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linLay2"
+        android:background="#3b5998">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post To Facebook"
+            android:id="@+id/textView"
+            android:layout_weight="0.09"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#dfe3ee" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="51dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Score"
+                android:id="@+id/points"
+                android:layout_gravity="right"
+                android:textSize="20dp"
+                android:background="#8b9dc3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Percent"
+                android:id="@+id/dangerText"
+                android:layout_weight="0.09"
+                android:layout_gravity="right"
+                android:textSize="15dp"
+                android:background="#8b9dc3" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="0.13" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/postButton"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fiu_CaSPR.Sajib.TrustPal.FetchData"
+    android:background="#15284d"
+    android:clickable="false">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webView"
+        android:background="#3b99eb"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/myProgressBar"
+        android:layout_alignRight="@+id/myProgressBar"
+        android:layout_alignEnd="@+id/myProgressBar"></WebView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myProgressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="20dp"
+        android:minWidth="200dp"
+        android:progress="1"
+        android:background="#4f4343"
+        android:progressBackgroundTint="#f7f314"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/titleText"
+        android:layout_alignStart="@+id/titleText"
+        android:layout_alignRight="@+id/titleText"
+        android:layout_alignEnd="@+id/titleText"
+        android:progressTint="#2ea00a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Downloading Files"
+        android:id="@+id/titleText"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please wait..."
+        android:id="@+id/textView4"
+        android:textColor="#fff"
+        android:singleLine="true"
+        android:layout_below="@+id/titleText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

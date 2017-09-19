@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AbuSNF</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="stayLoggedText">Remember me</string>
+    <string name="passwordText">Password:</string>
+    <string name="registerButtonText">Register</string>
+    <string name="loginWithTwitterButtonText">Login</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_main">AbuSNF</string>
+    <string name="usernameText">Username:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user_home">userHome</string>
+    <string name="title_activity_new_tweet">NewTweet</string>
+    <string name="TweetLabel">Write Your Tweet</string>
+    <string name="title_activity_fb_home">fbHome</string>
+    <string name="title_activity_post">Facebook Post</string>
+
+    <string name="fb_text"><u>Sign Up For Facebook</u></string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="consent">AbuSNF will ask you some questions about 25 of your Facebook friends and then determine if you are a safe person or your friends can take advantage of you. \n \n <b> Please take your time to read and answer the questions for each friend. At least 3 of the displayed friends are fake friends created by us. Failure to carefully answer the questions may result in getting less money for the job. </b> </string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="you_picked">You picked:</string>
+    <string name="no_friends_selected">&lt;No friends selected&gt;</string>
+    <string name="no_place_selected">&lt;No place selected&gt;</string>
+    <string name="pick_seattle_place">Pick a Seattle Place</string>
+    <string name="app_id">1429957367301208</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_fetch_data">FetchData</string>
+    <string name="title_activity_friend_picker_starter">FriendPickerStarter</string>
+    <string name="title_activity_friend_picker">FriendPicker</string>
+    <string name="title_activity_data_collection_wrapper">DataCollectionWrapper</string>
+    <string name="title_activity_freind_selector">FreindSelector</string>
+    <string name="title_activity_friend_selector_view">FriendSelectorView</string>
+    <string name="title_activity_finish_job">FinishJob</string>
+    <string name="title_activity_fake_logout">FakeLogout</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="unfriend_text"><b>Unfriend:</b> This friend will be removed from your friendlist and will no longer have access to your stories.</string>
+    <string name="unfollow_text"><b>Unfollow:</b> You will not see the story updates posted by this friend.</string>
+    <string name="restrict_text"><b>Restrict:</b> This friend will no longer be able to access your stories.</string>
+    <string name="sandbox_text"><b>Sandbox:</b> A combination of the unfollow and restrict where you will no longer receive stories from
+this friend, and the friend will no longer be able to access your stories.</string>
+    <string name="ignore_text"><b>Ignore:</b> Take no action and keep the friend as it is.</string>
+</resources>

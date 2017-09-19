@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="label_background">#0AA411</color>
+ <color name="white">#ffffff</color>
+ <color name="transparent">#00000000</color>
+ <color name="black">#000000</color>
+ <color name="green">#008000</color>
+
+ <color name="feed_bg">#d3d6db</color>
+ <color name="feed_item_bg">#ffffff</color>
+ <color name="feed_item_border">#c2c3c8</color>
+ <color name="link">#0a80d1</color>
+ <color name="timestamp">#a0a3a7</color>
+ <color name="gray">#333333</color>
+</resources>

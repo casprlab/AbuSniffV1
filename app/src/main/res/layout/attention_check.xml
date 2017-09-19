@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#4932bb"
+    android:gravity="center_vertical|center"
+    android:orientation="vertical" >
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4932bb">
+
+            <!---*************************** Question 1  ***********************************-->
+
+            <LinearLayout
+                android:id="@+id/layoutquestion1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AbuSNF will deliver a survey that will help us understand how people make decisions in Facebook. For instance, we are interested in whether you take the time to read the directions. To show that you have read the instructions, please ignore the question below and just choose the &apos;&apos;None of the above&apos;&apos; option."
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:textSize="21sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please check all the words that describe how you feel now:"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/CheckBox11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interested"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:text="Excited"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alert"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Afraid"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/CheckBox15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inspired"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proud"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Irritable"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scared"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/CheckBox19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attentive"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+
+                    <CheckBox
+                        android:id="@+id/CheckBox10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="None of the above"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:checked="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!---**************************************************************-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
