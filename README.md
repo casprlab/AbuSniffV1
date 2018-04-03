@@ -6,10 +6,10 @@ The following are included in this repository:
 
 #### Installation
 
-In order to compile this project and generate apk file, either git clone this project or download the source code in zipped format.
-Import the project in your Android Studio.
-Make any required changes that is required to make the projec compatible to your IDE version.
-Compile the code, generate the signed apk and install it in your device.
+- In order to compile this project and generate apk file, either git clone this project or download the source code in zipped format.
+- Import the project in your Android Studio.
+- Make any required changes that is required to make the projec compatible to your IDE version.
+- Compile the code, generate the signed apk and install it in your device.
 
 #### Data File
 
