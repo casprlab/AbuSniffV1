@@ -1,9 +1,18 @@
-### Tuts+ Quick Tip: Add Facebook Login to Your Android App
+# AbuSniff
 
-#### Instructor: Hathibelagal Ashraff
+The following are included in this repository:
+- Source code for AbuSniff mobile app
+- Data File for this project  
 
-Facebook Login provides a convenient and secure way for people to log in to an app without having to go through a sign-up process first. In this quick tip, you are going to learn how to add Facebook Login to an Android app using Facebook's latest SDK for Android.
+#### Installation
 
-Source Files for the Tuts+ Quick Tip: [Add Facebook Login to Your Android App](http://code.tutsplus.com/tutorials/quick-tip-add-facebook-login-to-your-android-app--cms-23837)
+In order to compile this project and generate apk file, either git clone this project or download the source code in zipped format.
+Import the project in your Android Studio.
+Make any required changes that is required to make the projec compatible to your IDE version.
+Compile the code, generate the signed apk and install it in your device.
 
-**Read this tutorial on [Tuts+](https://code.tutsplus.com)**
+#### Data File
+
+This repository also contains the data file that has been collected for this project.
+
+Please also see our [privacy policy](PrivacyPolicy.md).
