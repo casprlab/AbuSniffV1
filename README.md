@@ -15,4 +15,7 @@ The following are included in this repository:
 
 This repository also contains the data file that has been collected for this project.
 
+- The data file contains the data in the csv format in the following order:
+R_ID,Q1,Q2,Q3,Q4,Q5,RECO,Q1_Time,Q2_Time,Q3_Time,Q4_Time,Q5_Time,RECO,STATUS,Response_Time,REASON,POST,PHOTO,MUTUAL,CUR.CITY,HOMETOWN,CUR.STUDY,PAST.STUDY,COM.STUDY,CUR.WORK,PAST.WORK,COM.WORK
+
 Please also see our [privacy policy](PrivacyPolicy.md).
